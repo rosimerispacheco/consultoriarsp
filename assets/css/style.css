@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 100vw;
+	margin: 3px;
+	background: #D1DCE2;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+	display: flex;
+	margin: 3px;
+	font-family: 'Metrophobic', sans-serif;
+	border-radius: 5px;
+}
+
+header {
+	flex: 1 1 100vw;
+	background: #91dbbb
+}
+
+header #logo {
+	display: flex;
+	flex: 0 1 200px;
+	background: #91dbbb;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagem-logo {
+	border-radius: 50%;
+}
+
+#openMenu,
+#closeMenu {
+	border: none;
+	background: none;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 0px 5px 0px 5px;
+	cursor: pointer;
+	display: none;
+}
+
+nav {
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1 1 100px;
+	background: #91dbbb;
+}
+
+nav a {
+	margin: 0 3%;
+	font-size: 15pt;
+	color: black;
+	font-weight: 600;
+}
+
+main {
+	flex: 1 1 500px;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: inherit;
+	color: black;
+	background: #c0e6de;
+}
+
+.objetivos h3 {
+	text-align: center;
+	color: #181818;
+}
+
+.sobre-aside div p {
+	text-align: justify;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.imagem-escritorio {
+	flex: 1 5 500px;
+	margin-right: 15px;
+}
+
+.imagem-servico {
+	width: 100vw;
+	height: 280px;
+	padding: 0;
+	margin: 0;
+}
+
+.missao {
+	align-items: flex-start;
+}
+
+aside {
+	flex: 1 1 200px;
+	font-family: 'Metrophobic', sans-serif;
+	color: black;
+	background: #c0e6de;
+}
+
+.aside-primeiro h2 {
+	text-align: center;
+}
+
+.aside-primeiro p {
+	text-align: justify;
+}
+
+.espaco-imagem {
+	width: 100%;
+	height: 100%;
+}
+
+.imagem-final {
+	width: 100%;
+	height: 100%;
+}
+
+.main-segundo {
+	flex-direction: row;
+	flex-grow: inherit;
+	flex-shrink: inherit;
+	flex-wrap: wrap;
+	text-align: start;
+	align-items: start;
+	font-family: 'Metrophobic', sans-serif;
+	color: black;
+}
+
+.main-segundo div {
+	margin: 2px;
+}
+
+.main-segundo {
+	text-align: justify;
+}
+
+.aside-index {
+	text-align: justify;
+}
+
+.main-sobre {
+	flex: 1 1 500px;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Metrophobic', sans-serif;
+	color: black;
+}
+
+.videos {
+	flex: 1 1 100px;
+}
+
+/* serviços */
+.objetivos p {
+	text-align: justify;
+}
+
+.servicos-consultoria {
+	text-align: justify;
+}
+
+/* contato */
+.mapa-endereco {
+	display: block;
+}
+
+.mapa-endereco h2 {
+	font-size: 18px;
+	color: black;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.mapa-endereco p {
+	color: black;
+	margin-bottom: 5px;
+}
+
+.formulario {
+	padding: 10px;
+}
+
+.formulario h2,
+input {
+	text-align: center;
+	margin: 5px;
+	color: black;
+}
+
+.formulario label {
+	width: 60px;
+	display: inline-block;
+}
+
+.formulario input {
+	width: 310px;
+	height: 25px;
+}
+
+.botao {
+	height: 30px;
+	background-color: white;
+	border-radius: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	flex: 1 1 100vw;
+	background: #91dbbb;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.videos {
+	width: 50%;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 717px) {
+
+	#openMenu,
+	#closeMenu {
+		display: block;
+	}
+
+	#openMenu {
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		position: fixed;
+		right: 15px;
+		top: 15px;
+	}
+
+	nav {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(255, 255, 255, 0.8);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		display: none;
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+	nav a {
+		margin: 3%;
+	}
+
+	main img {
+		width: 100%;
+	}
+
+
+
+}
